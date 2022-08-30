@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+body{
+   font-size: 1.3rem;
+margin: 0;
+}
+.container{
+    width: 80%;
+    margin:auto;
+}
+.top-nav{
+    background: rgb(3, 57, 24);
+    color: aliceblue;
+    position: fixed;
+    width: 100vw;
+    
+   
+}
+
+    
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.menu ul li{
+    margin-left: 1rem;
+}
+.menu ul li:hover{ 
+    cursor: pointer;
+    color:brown;
+
+}
+.hero{
+    background: url(https://www.gardenia.net/webvanta/h_half/jardin/images/206406.jpg) 
+    no-repeat center; 
+   background-size:cover;
+ min-height:  100vh;
+ background-attachment: fixed;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ z-index: -2;
+
+}
+.round{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(red, yellow, orange);
+    border-radius: 50%;
+    position: relative;
+    left: 51px;
+    top: 94px;
+    z-index: -1;
+
+}
+    
+.hero-content{
+background: rgba(2, 105, 48, 0.248);
+width: 450px;
+color: rgb(81, 6, 7);
+padding: 1rem;
+border-radius: 5px;
+text-align: center;
+backdrop-filter: blur(5px);
+
+}
+.img1{
+    background: url(https://image.shutterstock.com/shutterstock/photos/650471434/display_1500/stock-photo-traditional-japanese-garden-in-the-hague-650471434.jpg)
+     no-repeat center;
+    background-size: cover;
+    min-height:60vh;
+}
+.img2{
+    background: url(https://media.istockphoto.com/id/1056303572/photo/view-from-sydney-botanical-garden-towards-sydney-opera-house-and-sydney-harbour-bridge.webp?s=612x612&w=is&k=20&c=VbcVOOf95r526R7fTmCSl9f-wseS7yU78CAK40r16-0=)
+    no-repeat center;
+    background-size: cover;
+    min-height:60vh;
+}
+.img3{
+    background: url(https://media.istockphoto.com/id/157481806/photo/garden-flowers-xxxl.webp?s=612x612&w=is&k=20&c=xxshppeV1l-hcfMKh-J1vQLJb5v-BAlja5XwIRxdZhA=)
+    no-repeat center;
+    background-size: cover;
+    min-height:60vh;
+}
+.img4{
+    background: url(https://images.unsplash.com/photo-1580600301354-0ce8faef576c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z2FyZGVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60)no-repeat center;
+    background-size: cover;
+    min-height:60vh;
+}
+.img1,
+.img2,
+.img3,
+.img4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    background: rgb(6, 118, 43);
+    color: aliceblue;
+    padding:2rem 6rem;
+    border-radius: 5px;
+}
+.down-arrow{
+    font-size: 10rem;
+    position: absolute;
+    bottom: 50px;
+    color: rgb(201, 111, 14);
+    transform: rotate(90deg);
+    font-weight: bolder;
+    animation: go-down 1s infinite;
+}
+@keyframes go-down{
+    0%{
+        bottom: 100px;
+        color: brown;
+    }
+    50%{
+        
+        color: rgb(39, 4, 37);
+    }
+    100%{
+        bottom: 10px;
+        color: rgb(8, 73, 91);
+    }
+   
+}
